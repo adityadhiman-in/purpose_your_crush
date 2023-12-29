@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Image Slider</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="img6.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Hey, Welcome! I am glad that you are here</span>
+            <h2>
+              Hey I just Wanted To Tell You Something <br />
+              Swipe Right If You Want To Know
+            </h2>
+            <a href="#" class="button">Please Swipe Right To Continue👉 </a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img1.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Guess What 🤔</span>
+            <h2>
+              I Am In Love With You<br />
+              Feelings That I Can't Exlain In Words
+            </h2>
+            <a href="#" class="button">Please Swipe Right To Continue👉</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img2.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">So Cute 🥰 See Both Of them</span>
+            <h2>
+              We Can Be Like This Soon <br />
+              So Finally I want To Confess
+            </h2>
+            <a href="#" class="button">Please Swipe Right To Continue👉</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img7.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Finally I am saying it to you 💝</span>
+            <h2>
+              I LOVE YOU 💖<br />
+              WILL YOU BE MINE FOREVER 💍
+            </h2>
+            <a href="#" class="button"
+              >Please Swipe for last time If your Answer is Yes 💖</a
+            >
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="img4.jpg" alt="" class="image" />
+          <div class="image-data">
+            <span class="text">Yeehh Thank You for accepting</span>
+            <h2>
+              I will Be With You Forever<br />
+              Just Give Me Text From Below 😊⭐
+            </h2>
+            <img src="cute.gif" alt="cute" />
+            <br />
+            <a href="https://instagram.com/adityadhiman.in" class="button"
+              >Confirm By Sending Me a Heart 💖 Click here
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
